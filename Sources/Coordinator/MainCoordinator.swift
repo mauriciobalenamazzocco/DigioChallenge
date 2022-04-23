@@ -8,11 +8,6 @@
 import Foundation
 import UIKit
 
-protocol MainCoordinatorDelegate: AnyObject {
-    func toProduct(preview: ProductPreview)
-    func backToProduct()
-}
-
 class MainCoordinator {
 
     // MARK: - Properties
@@ -35,27 +30,9 @@ extension MainCoordinator: Coordinator {
     public func start() {
         let productListCoordinator = ProductListCoordinator(
             navigationController: navigationController,
-            configuration: configuration,
-            delegate: self)
+            configuration: configuration
+        )
         childCoordinators.append(productListCoordinator)
         productListCoordinator.start()
-    }
-}
-
-extension MainCoordinator: MainCoordinatorDelegate {
-    func backToProduct() {
-        if navigationController.presentedViewController != nil {
-            navigationController.dismiss(animated: true)
-        }
-        childCoordinators.removeLast()
-    }
-
-    func toProduct(preview: ProductPreview) {
-        let productPreview = ProductPreviewCoordinator(
-            navigationController: navigationController,
-            preview: preview,
-            delegate: self)
-        childCoordinators.append(productPreview)
-        productPreview.start()
     }
 }

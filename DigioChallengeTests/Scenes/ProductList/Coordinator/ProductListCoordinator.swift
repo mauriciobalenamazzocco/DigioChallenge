@@ -28,8 +28,8 @@ class ProductListCoordonatorTests: XCTestCase {
 
         coordinator = .init(
             navigationController: navigationControllerSpy,
-            configuration: Configuration(enviroment: .virtual),
-            delegate: nil)
+            configuration: Configuration(enviroment: .virtual)
+        )
     }
 
     // MARK: - Tests

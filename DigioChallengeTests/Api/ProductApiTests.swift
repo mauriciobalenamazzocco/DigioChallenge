@@ -74,7 +74,7 @@ class ProductApiTests: XCTestCase {
 
     // MARK: - Test
 
-    func test_ShouldReturn()
+    func test_ShouldReturnError()
     {
         // Given
 

@@ -19,6 +19,7 @@ class MainCoordonatorTests: XCTestCase {
     var navigationControllerSpy: UINavigationControllerSpy!
 
     // MARK: - Tests Lifecycle
+
     override func setUp() {
         super.setUp()
         navigationControllerSpy = .init()
@@ -29,11 +30,14 @@ class MainCoordonatorTests: XCTestCase {
     }
 
     // MARK: - Tests
+
     func testStart() {
         // When
+
         coordinator.start()
 
         // Then
+        
         XCTAssert(navigationControllerSpy.pushViewControllerCalled,
                   "start should push to navigation controller")
         XCTAssert(navigationControllerSpy.viewController is ProductListViewController,

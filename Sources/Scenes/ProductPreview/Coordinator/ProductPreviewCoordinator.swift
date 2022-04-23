@@ -18,14 +18,14 @@ class ProductPreviewCoordinator {
     public var navigationController: UINavigationController
     public var childCoordinators: [Coordinator] = []
 
-    private weak var delegate: MainCoordinatorDelegate?
+    private weak var delegate: ProductPreviewCoordinatorDelegate?
 
     private let preview: ProductPreview
 
     // MARK: - Constructors
     public init(navigationController: UINavigationController,
                 preview: ProductPreview,
-                delegate: MainCoordinatorDelegate?
+                delegate: ProductPreviewCoordinatorDelegate?
     ) {
         self.navigationController = navigationController
         self.preview = preview
@@ -46,6 +46,6 @@ extension ProductPreviewCoordinator: Coordinator {
 
 extension ProductPreviewCoordinator: ProductPreviewViewModelDelegate {
     func close() {
-        delegate?.backToProduct()
+        delegate?.popToList()
     }
 }

@@ -17,17 +17,14 @@ class ProductListCoordinator {
     public var childCoordinators: [Coordinator] = []
 
     private var configuration: ConfigurationProtocol
-    private weak var delegate: MainCoordinatorDelegate?
 
     // MARK: - Constructors
 
     public init(navigationController: UINavigationController,
-                configuration: ConfigurationProtocol,
-                delegate: MainCoordinatorDelegate?
+                configuration: ConfigurationProtocol
     ) {
         self.navigationController = navigationController
         self.configuration = configuration
-        self.delegate = delegate
     }
 }
 
@@ -46,6 +43,20 @@ extension ProductListCoordinator: Coordinator {
 
 extension ProductListCoordinator: ProductListViewModelDelegate {
     func toPreview(product: ProductPreview) {
-        delegate?.toProduct(preview: product)
+        let productPreview = ProductPreviewCoordinator(
+            navigationController: navigationController,
+            preview: product,
+            delegate: self)
+        childCoordinators.append(productPreview)
+        productPreview.start()
+    }
+}
+
+extension ProductListCoordinator: ProductPreviewCoordinatorDelegate {
+    func popToList() {
+        if navigationController.presentedViewController != nil {
+            navigationController.dismiss(animated: true)
+        }
+        childCoordinators.removeLast()
     }
 }
