@@ -32,7 +32,7 @@ Projeto conta atualmente com 50%+ de code coverage e testes de Snapshot
 ### API
 
 Foi criado uma camada completa da API mesmo não utilizando todos os recursos.
-Como esta api não retorna um erro de business, foi apenas criado um template de exemplo [ApiErrorResponse]. 
+Como esta api não retorna um erro de business, foi apenas criado um template de exemplo (ApiErrorResponse) 
 
 ### TODO:
 
