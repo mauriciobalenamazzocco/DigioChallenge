@@ -1,0 +1,25 @@
+/*
+  Localizable.strings
+ DigioChallenge
+
+  Created by Mauricio Balena Mazzocco on 19/04/22.
+  Copyright © 2020 Mauricio Balena Mazzocco. All rights reserved.
+*/
+
+// MARK: General
+
+"ok" = "Ok";
+"back" = "Back";
+"cancel" = "Cancel";
+"digioCashTitle" = "digio Cash";
+"productTitle" = "Products";
+"errorTitle" = "Dammmm!";
+
+// MARK: API Error
+
+"serialization" = "A serialization error occurred, %@";
+"badRequest" = "The request cannot be processed";
+"forbidden" = "The request is not allowed";
+"notFound" = "Url cannot be found";
+"serverError" = "Server is not available";
+"unauthorized" = "Unauthorized requisition";

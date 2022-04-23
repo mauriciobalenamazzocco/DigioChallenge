@@ -1,0 +1,6 @@
+framework module Pods_DigioChallengeTests {
+  umbrella header "Pods-DigioChallengeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

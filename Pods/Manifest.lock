@@ -1,0 +1,28 @@
+PODS:
+  - iOSSnapshotTestCase (8.0.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 8.0.0)
+  - iOSSnapshotTestCase/Core (8.0.0)
+  - iOSSnapshotTestCase/SwiftSupport (8.0.0):
+    - iOSSnapshotTestCase/Core
+  - Kingfisher (7.1.2)
+  - SwiftLint (0.46.2)
+
+DEPENDENCIES:
+  - iOSSnapshotTestCase
+  - Kingfisher
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - iOSSnapshotTestCase
+    - Kingfisher
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  iOSSnapshotTestCase: a670511f9ee3829c2b9c23e6e68f315fd7b6790f
+  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
+  SwiftLint: 6bc52a21f0fd44cab9aa2dc8e534fb9f5e3ec507
+
+PODFILE CHECKSUM: a6a7250cfbb52afe05214d541e655bf4366b0285
+
+COCOAPODS: 1.10.1
