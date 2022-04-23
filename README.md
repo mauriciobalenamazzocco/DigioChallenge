@@ -37,7 +37,7 @@ Como esta api não retorna um erro de business, foi apenas criado um template de
 ### TODO:
 
 * Interface customizada de erro.
-* Criar um framework com todos os Mocks para poderem ser compartilhados entre os schemes de testes.
+* Criar um framework contendo todos os Mocks para poderem ser compartilhados entre os schemes de Teste.
 * [XcodeGen](https://github.com/yonaskolb/XcodeGen) - Utilizar o XcodeGen, para resolver problemas de futuros conflitos no xcodeproj e otimização do projeto
 
 ## Outro Projeto
