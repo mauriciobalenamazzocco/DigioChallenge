@@ -12,7 +12,7 @@ Desafio proposto para o cargo de iOS developer
 ## Arquitetura e Patterns
 
 A arquitetura escolhida foi MVVM-C, por ser uma arquitetura mais simples, utilizada em diversos projetos, apresenta separação das camadas bem definidas visando facilidade nos futuros desenvolvimentos, manutenções e testes.
-O projeto segue os principios do SOLID, com responsabilidades definidas, clean architecture, injeção de dependência, separação das camadas.
+O projeto segue os principios do SOLID, com responsabilidades definidas, clean code, injeção de dependência, separação das camadas.
 
 <img src="/Documentation/Images/architecture.png" width="700" height="301">
 
@@ -37,6 +37,7 @@ Como esta api não retorna um erro de business, foi apenas criado um template de
 ### TODO:
 
 * Interface customizada de erro.
+* Criar um framework com todos os Mocks para poderem ser compartilhados entre os schemes de testes.
 * [XcodeGen](https://github.com/yonaskolb/XcodeGen) - Utilizar o XcodeGen, para resolver problemas de futuros conflitos no xcodeproj e otimização do projeto
 
 ## Outro Projeto
