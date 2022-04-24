@@ -11,7 +11,8 @@ Desafio proposto para o cargo de iOS developer
 
 ## Arquitetura e Patterns
 
-A arquitetura escolhida foi MVVM-C, por ser uma arquitetura mais simples, utilizada em diversos projetos, apresenta separação das camadas bem definidas visando facilidade nos futuros desenvolvimentos, manutenções e testes.
+A arquitetura escolhida foi MVVM-C, por ser uma arquitetura mais simples, robusta, utilizada em diversos projetos, apresenta separação das camadas bem definidas visando facilidade nos futuros desenvolvimentos, manutenções e testes.
+Arquiteturas como VIP, VIPER são mais complexas, para devs que nunca tiveram contato com estas arquiteturas precisam passar por uma curva de aprendizagem. 
 O projeto segue os principios do SOLID, com responsabilidades definidas, clean code, injeção de dependência, separação das camadas.
 
 <img src="/Documentation/Images/architecture.png" width="700" height="301">
@@ -19,7 +20,7 @@ O projeto segue os principios do SOLID, com responsabilidades definidas, clean c
 
 ## Bibliotecas 
 
-* [Kingsfisher](https://github.com/onevcat/Kingfisher) - Biblioteca bem conhecida, facilita o gerenciamento de download das imagens
+* [Kingsfisher](https://github.com/onevcat/Kingfisher) - Facilita o gerenciamento de download das imagens. Se caso não pudesse usar esta lib, pode ser utilizado o URLSession para fazer o download.
 * [SwiftLint](https://github.com/realm/SwiftLint) - Utilizada para manter as boas práticas e convenções de código
 * [iOSSnapshotTestCase](https://github.com/uber/ios-snapshot-test-case) - Facilita os testes de UI com Snapshot
 
