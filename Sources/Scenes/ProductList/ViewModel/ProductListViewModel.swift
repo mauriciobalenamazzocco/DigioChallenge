@@ -43,19 +43,23 @@ class ProductListViewModel: ProductListViewModelProtocol {
 
     func getProductList() {
         state.value = .loading
+
         productApi.getProducts { [weak self] response in
             guard let self = self else { return }
-            switch response {
+            DispatchQueue.main.async {
 
-            case let .success(productContainerResponse):
-                self.state.value = .didFetch(
-                    self.convertResponseToDisplay(
-                        response: productContainerResponse
+                switch response {
+
+                case let .success(productContainerResponse):
+                    self.state.value = .didFetch(
+                        self.convertResponseToDisplay(
+                            response: productContainerResponse
+                        )
                     )
-                )
 
-            case let .failure(apiErrorResponse):
-                self.state.value = .error(apiErrorResponse.description)
+                case let .failure(apiErrorResponse):
+                    self.state.value = .error(apiErrorResponse.description)
+                }
             }
         }
     }
