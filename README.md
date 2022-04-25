@@ -20,7 +20,7 @@ O projeto segue os principios do SOLID, com responsabilidades definidas, clean c
 
 ## Bibliotecas 
 
-* [Kingsfisher](https://github.com/onevcat/Kingfisher) - Facilita o gerenciamento de download das imagens. Se caso não pudesse usar esta lib, pode ser utilizado o URLSession para fazer o download.
+* [Kingsfisher](https://github.com/onevcat/Kingfisher) - Facilita o gerenciamento de download das imagens. Se caso não pudesse usar esta lib, pode ser utilizado o URLSession para fazer o download. Ate para testes de snapshot seria ideal que tivesse sido imagens mokadas.
 * [SwiftLint](https://github.com/realm/SwiftLint) - Utilizada para manter as boas práticas e convenções de código
 * [iOSSnapshotTestCase](https://github.com/uber/ios-snapshot-test-case) - Facilita os testes de UI com Snapshot
 
@@ -40,6 +40,7 @@ Como esta api não retorna um erro de business, foi apenas criado um template de
 * Interface customizada de erro.
 * Criar um framework contendo todos os Mocks para poderem ser compartilhados entre os schemes de Teste.
 * [XcodeGen](https://github.com/yonaskolb/XcodeGen) - Utilizar o XcodeGen, para resolver problemas de futuros conflitos no xcodeproj e otimização do projeto
+
 
 ## Outro Projeto
 
